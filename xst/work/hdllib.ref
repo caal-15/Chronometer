@@ -1,0 +1,10 @@
+EN cyclicalcounter NULL F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd sub00/vhpl08 1352845856
+EN div50mto1 NULL F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd sub00/vhpl00 1352846279
+AR cyclicalcounter behavioral F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd sub00/vhpl09 1352845857
+EN mux4to1 NULL F:/Documentos/Electronica/DigiClock/mux4to1.vhd sub00/vhpl04 1352843658
+AR div50mto1 arch F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd sub00/vhpl01 1352846280
+EN decoder2to4 NULL F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd sub00/vhpl06 1352844857
+EN cont59x2 NULL F:/Documentos/Electronica/contadores/cont59x2.vhd sub00/vhpl02 1352843082
+AR decoder2to4 behavioral F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd sub00/vhpl07 1352844858
+AR cont59x2 contarch F:/Documentos/Electronica/contadores/cont59x2.vhd sub00/vhpl03 1352843083
+AR mux4to1 behavioral F:/Documentos/Electronica/DigiClock/mux4to1.vhd sub00/vhpl05 1352843659

@@ -1,0 +1,31 @@
+V3 16
+FL F:/Documentos/Electronica/contadores/cont59x2.vhd 2012/11/13.16:44:34 P.28xd
+EN work/cont59x2 1352843082 FL F:/Documentos/Electronica/contadores/cont59x2.vhd \
+      PB ieee/std_logic_1164 1341906176 PB ieee/NUMERIC_STD 1341906182 \
+      PB ieee/STD_LOGIC_UNSIGNED 1341906179
+AR work/cont59x2/contArch 1352843083 \
+      FL F:/Documentos/Electronica/contadores/cont59x2.vhd EN work/cont59x2 1352843082
+FL F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd 2012/11/13.17:30:53 P.28xd
+EN work/CyclicalCounter 1352845856 \
+      FL F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/CyclicalCounter/Behavioral 1352845857 \
+      FL F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd \
+      EN work/CyclicalCounter 1352845856
+FL F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd 2012/11/13.17:14:13 P.28xd
+EN work/Decoder2to4 1352844857 \
+      FL F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/Decoder2to4/Behavioral 1352844858 \
+      FL F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd EN work/Decoder2to4 1352844857
+FL F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd 2012/11/13.16:35:13 P.28xd
+EN work/Div50Mto1 1352846279 FL F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/Div50Mto1/arch 1352846280 \
+      FL F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd EN work/Div50Mto1 1352846279
+FL F:/Documentos/Electronica/DigiClock/mux4to1.vhd 2012/11/13.16:54:14 P.28xd
+EN work/mux4to1 1352843658 FL F:/Documentos/Electronica/DigiClock/mux4to1.vhd \
+      PB ieee/std_logic_1164 1341906176
+AR work/mux4to1/Behavioral 1352843659 \
+      FL F:/Documentos/Electronica/DigiClock/mux4to1.vhd EN work/mux4to1 1352843658
+FL F:/Documentos/Electronica/MultipleDivider/Div50Mto1.vhd 2012/11/13.16:35:13 P.28xd

@@ -1,0 +1,5 @@
+set -tmpdir "F:/Documentos/Electronica/DigiClock/xst/projnav.tmp"
+set -xsthdpdir "F:/Documentos/Electronica/DigiClock/xst"
+elaborate
+-ifn cont59x2.prj
+-ifmt mixed
