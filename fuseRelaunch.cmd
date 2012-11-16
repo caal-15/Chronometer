@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pin3da/Repos/Chronometer/tb_chronometer_isim_beh.exe" -prj "/home/pin3da/Repos/Chronometer/tb_chronometer_beh.prj" "work.tb_chronometer" 

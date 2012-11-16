@@ -1,0 +1,2 @@
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/bcd.vhi -module bcd -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work bcd.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/bcd.vhi -module bcd -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work bcd.vhd 

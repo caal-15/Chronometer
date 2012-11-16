@@ -1,0 +1,3 @@
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/mux4to1.vhi -module mux4to1 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux4to1.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/mux4to1.vhi -module mux4to1 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux4to1.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/mux4to1.vhi -module mux4to1 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux4to1.vhd 

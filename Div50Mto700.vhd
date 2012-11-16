@@ -52,6 +52,6 @@ process (clk50M,reset) begin
 	end if;	
 end process;
 
-clk1<=clkout;
+clk700<=clkout;
 end arch;
 

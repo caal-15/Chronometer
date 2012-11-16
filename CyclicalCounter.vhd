@@ -43,7 +43,7 @@ signal s1out : std_logic := '0';
 
 
 begin
-process(clk, reset) begin
+process(clk, reset,s0out,s1out) begin
 	if(reset='1') then
 		s0out<='0';
 		s1out<='1';

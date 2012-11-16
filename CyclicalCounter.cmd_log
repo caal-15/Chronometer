@@ -1,0 +1,2 @@
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/CyclicalCounter.vhi -module CyclicalCounter -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CyclicalCounter.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/CyclicalCounter.vhi -module CyclicalCounter -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CyclicalCounter.vhd 

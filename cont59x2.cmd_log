@@ -1,0 +1,2 @@
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/cont59x2.vhi -module cont59x2 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work cont59x2.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/cont59x2.vhi -module cont59x2 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work cont59x2.vhd 

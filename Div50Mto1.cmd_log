@@ -1,0 +1,11 @@
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/Div50Mto1.vhi -module Div50Mto1 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Div50Mto1.vhd 
+xst -intstyle ise -ifn "/home/pin3da/Repos/Chronometer/Div50Mto1.xst" -ofn "/home/pin3da/Repos/Chronometer/Div50Mto1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 Div50Mto1.ngc Div50Mto1.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Div50Mto1_map.ncd Div50Mto1.ngd Div50Mto1.pcf 
+xst -intstyle ise -ifn "/home/pin3da/Repos/Chronometer/Div50Mto1.xst" -ofn "/home/pin3da/Repos/Chronometer/Div50Mto1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-5 Div50Mto1.ngc Div50Mto1.ngd  
+map -intstyle ise -p xc3s100e-cp132-5 -cm area -ir off -pr off -c 100 -o Div50Mto1_map.ncd Div50Mto1.ngd Div50Mto1.pcf 
+par -w -intstyle ise -ol high -t 1 Div50Mto1_map.ncd Div50Mto1.ncd Div50Mto1.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Div50Mto1.twx Div50Mto1.ncd -o Div50Mto1.twr Div50Mto1.pcf 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/Div50Mto1.vhi -module Div50Mto1 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Div50Mto1.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/Div50Mto1.vhi -module Div50Mto1 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Div50Mto1.vhd 

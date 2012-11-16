@@ -1,0 +1,5 @@
+set -tmpdir "/home/pin3da/Repos/Chronometer/xst/projnav.tmp"
+set -xsthdpdir "/home/pin3da/Repos/Chronometer/xst"
+elaborate
+-ifn bcd.prj
+-ifmt mixed

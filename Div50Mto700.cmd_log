@@ -1,0 +1,2 @@
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/Div50Mto700.vhi -module Div50Mto700 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Div50Mto700.vhd 
+vhdtdtfi -prj DigiClock -o /home/pin3da/Repos/Chronometer/Div50Mto700.vhi -module Div50Mto700 -template /home/pin3da/mybin/14.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Div50Mto700.vhd 

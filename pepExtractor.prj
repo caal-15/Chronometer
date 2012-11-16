@@ -1,0 +1,8 @@
+work	"Chronometer.vhd"
+work	"CyclicalCounter.vhd"
+work	"Decoder2to4.vhd"
+work	"Div50Mto1.vhd"
+work	"Div50Mto700.vhd"
+work	"bcd.vhd"
+work	"cont59x2.vhd"
+work	"mux4to1.vhd"
