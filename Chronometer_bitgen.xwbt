@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\Documentos\Electronica\DigiClock\Chronometer.ncd
+OUTFILE=F:\Documentos\Electronica\DigiClock\Chronometer.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=F:\Documentos\Electronica\DigiClock
+LICENSE=WebPack
+USER_INFO=210663646_0_0_170

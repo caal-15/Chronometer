@@ -45,7 +45,7 @@ begin
 					when X"4" => dataout<= not(X"66");
 					when X"5" => dataout<= not(X"B6");
 					when X"6" => dataout<= not(X"BE");
-					when X"7" => dataout<= not(X"E1");
+					when X"7" => dataout<= not(X"E0");
 					when X"8" => dataout<= not(X"FE");
 					when others => dataout<= not(X"F6");
 				end case;

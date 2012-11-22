@@ -37,13 +37,13 @@ end Div50Mto700;
 
 architecture arch of Div50Mto700 is
 signal clkout: std_logic := '0';
-signal counter: integer range 1 to 35_714 := 1;
+signal counter: integer range 1 to 399_999 := 1;
 begin
 process (clk50M,reset) begin
 	if(reset='1') then
 		clkout<='0';
 	elsif(rising_edge(clk50M)) then
-		if(counter=35_714) then
+		if(counter=399_999) then
 			clkout<= not (clkout);
 			counter<=1;
 		else

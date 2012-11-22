@@ -1,0 +1,8 @@
+vhdl work "mux4to1.vhd"
+vhdl work "Div50Mto700.vhd"
+vhdl work "Div50Mto1.vhd"
+vhdl work "Decoder2to4.vhd"
+vhdl work "CyclicalCounter.vhd"
+vhdl work "cont59x2.vhd"
+vhdl work "bcd.vhd"
+vhdl work "Chronometer1.vhd"

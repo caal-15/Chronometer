@@ -46,20 +46,23 @@ process (clk,reset) begin
 		cont3<= (others => '0');
 		cont4<= (others => '0');
 	elsif(rising_edge(clk)) then
-		if(cont1 < x"9") then 
-			cont1 <= cont1 + 1;
-		elsif(cont1 = x"9" and cont2 < "0101") then
-			cont2 <= cont2+1;
-			cont1 <= x"0";
-		elsif(cont1 = x"9" and cont2 = "0101" and cont3 < x"9") then
-			cont1 <= x"0";
-			cont2 <= "0000";
-			cont3 <= cont3+1;
-		elsif(cont1 = x"9" and cont2 = "0101" and cont3 = x"9" and cont4 < "0101") then
+	   if(cont1 = x"9" and cont2 = "0101" and cont3 = x"9" and cont4 < "0101") then
 			cont1 <= x"0";
 			cont2 <= "0000";
 			cont3 <= x"0";
 			cont4 <= cont4+1;
+		elsif(cont1 = x"9" and cont2 = "0101" and cont3 < x"9") then
+			cont1 <= x"0";
+			cont2 <= "0000";
+			cont3 <= cont3+1;
+      elsif(cont1 = x"9" and cont2 < "0101") then
+			cont2 <= cont2+1;
+			cont1 <= x"0";
+					
+		elsif(cont1 < x"9") then 
+			cont1 <= cont1 + 1;
+		
+		
 		end if;
 	end if;
 end process;	

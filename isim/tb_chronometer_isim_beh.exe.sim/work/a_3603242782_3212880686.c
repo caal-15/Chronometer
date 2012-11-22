@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x54af6ca1 */
+/* This file is designed for use with ISim build 0xa0883be4 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/pin3da/Repos/Chronometer/mux4to1.vhd";
+static const char *ng0 = "F:/Documentos/Electronica/DigiClock/mux4to1.vhd";
 
 
 
@@ -91,14 +91,14 @@ LAB22:    if (t1 != 0)
         goto LAB18;
 
 LAB19:
-LAB3:    t2 = (t0 + 3464);
+LAB3:    t2 = (t0 + 3472);
     *((int *)t2) = 1;
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(48, ng0);
     t2 = (t0 + 1032U);
     t9 = *((char **)t2);
-    t2 = (t0 + 3544);
+    t2 = (t0 + 3552);
     t10 = (t2 + 56U);
     t11 = *((char **)t10);
     t12 = (t11 + 56U);
@@ -117,7 +117,7 @@ LAB5:    t2 = (t0 + 1992U);
 LAB8:    xsi_set_current_line(50, ng0);
     t2 = (t0 + 1192U);
     t9 = *((char **)t2);
-    t2 = (t0 + 3544);
+    t2 = (t0 + 3552);
     t10 = (t2 + 56U);
     t11 = *((char **)t10);
     t12 = (t11 + 56U);
@@ -136,7 +136,7 @@ LAB10:    t2 = (t0 + 1992U);
 LAB13:    xsi_set_current_line(52, ng0);
     t2 = (t0 + 1352U);
     t9 = *((char **)t2);
-    t2 = (t0 + 3544);
+    t2 = (t0 + 3552);
     t10 = (t2 + 56U);
     t11 = *((char **)t10);
     t12 = (t11 + 56U);
@@ -155,7 +155,7 @@ LAB15:    t2 = (t0 + 1992U);
 LAB18:    xsi_set_current_line(54, ng0);
     t2 = (t0 + 1512U);
     t9 = *((char **)t2);
-    t2 = (t0 + 3544);
+    t2 = (t0 + 3552);
     t10 = (t2 + 56U);
     t11 = *((char **)t10);
     t12 = (t11 + 56U);
@@ -177,6 +177,6 @@ LAB20:    t2 = (t0 + 1992U);
 extern void work_a_3603242782_3212880686_init()
 {
 	static char *pe[] = {(void *)work_a_3603242782_3212880686_p_0};
-	xsi_register_didat("work_a_3603242782_3212880686", "isim/tb_chronometer_isim_beh.exe.sim/work/a_3603242782_3212880686.didat");
+	xsi_register_didat("work_a_3603242782_3212880686", "isim/tb_Chronometer_isim_beh.exe.sim/work/a_3603242782_3212880686.didat");
 	xsi_register_executes(pe);
 }

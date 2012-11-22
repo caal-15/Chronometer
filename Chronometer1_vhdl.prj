@@ -1,0 +1,8 @@
+vhdl work "F:\Documentos\Electronica\DigiClock\mux4to1.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\Div50Mto700.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\Div50Mto1.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\Decoder2to4.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\CyclicalCounter.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\cont59x2.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\bcd.vhd"
+vhdl work "F:\Documentos\Electronica\DigiClock\Chronometer1.vhd"

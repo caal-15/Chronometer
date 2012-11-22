@@ -21,13 +21,22 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity Chronometer is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           dataout : out  STD_LOGIC_VECTOR (7 downto 0);
-           displaySelector : out  STD_LOGIC_VECTOR (3 downto 0));
+    Port ( clk_c : in  STD_LOGIC;
+           reset_c : in  STD_LOGIC;
+           dataout_c : out  STD_LOGIC_VECTOR (7 downto 0);
+           displaySelector_c : out  STD_LOGIC_VECTOR (3 downto 0));
 end Chronometer;
 
 architecture arch_crh of Chronometer is
+
+COMPONENT Div50Mto700
+	PORT(
+		clk50m : IN std_logic;
+		reset : IN std_logic;          
+		clk700 : OUT std_logic
+		);
+END COMPONENT;
+
 
 COMPONENT CyclicalCounter 
 	PORT(
@@ -55,13 +64,6 @@ COMPONENT Div50Mto1
 		);
 END COMPONENT;
 
-COMPONENT Div50Mto700
-	PORT(
-		clk50m : IN std_logic;
-		reset : IN std_logic;          
-		clk700 : OUT std_logic
-		);
-END COMPONENT;
 
 COMPONENT bcd
 	PORT(
@@ -73,7 +75,7 @@ COMPONENT bcd
 END COMPONENT;
 
 
-COMPONENT cont59x2
+COMPONENT cont
 	PORT(
 		clk : IN std_logic;
 		reset : IN std_logic;          
@@ -96,22 +98,28 @@ END COMPONENT;
 		);
 END COMPONENT;
 
-signal div1toTime , div700tocounter : std_logic;
+signal div1toTime , div700tocount : std_logic;
 signal timetomux1, timetomux2, timetomux3,timetomux4,muxtobcd : std_logic_vector(3 downto 0);
 signal countertodecMux : std_logic_vector(1 downto 0);
 
 
 begin
 
+Inst_Div50Mto700: Div50Mto700 PORT MAP(
+		clk50m => clk_c,
+		reset => reset_c,
+		clk700 => div700tocount
+	);
+
 Inst_Div50Mto1: Div50Mto1 PORT MAP(
-		clk50M => clk,
-		reset => reset,
+		clk50M => clk_c,
+		reset => reset_c,
 		clk1 => div1totime 
 	);	
 
-Inst_cont59x2: cont59x2 PORT MAP(
+Inst_cont: cont PORT MAP(
 		clk => div1totime ,
-		reset => reset ,
+		reset => reset_c ,
 		cont1out => timetomux1,
 		cont2out => timetomux2,
 		cont3out => timetomux3,
@@ -129,21 +137,17 @@ Inst_mux4to1: mux4to1 PORT MAP(
 	);
 
 Inst_bcd: bcd PORT MAP(
-		clk => clk,
-		reset => reset,
+		clk => clk_c,
+		reset => reset_c,
 		datain => muxtobcd,
-		dataout => dataout
+		dataout => dataout_c
 	);
 
-Inst_Div50Mto700: Div50Mto700 PORT MAP(
-		clk50m => clk,
-		reset => reset,
-		clk700 => div700tocounter
-	);
+
 
 Inst_CyclicalCounter: CyclicalCounter PORT MAP(
-		clk =>div700tocounter,
-		reset => reset,
+		clk => div700tocount,
+		reset => reset_c,
 		s0 => countertodecMux(0),
 		s1 => countertodecMux(1)
 	);
@@ -151,7 +155,7 @@ Inst_CyclicalCounter: CyclicalCounter PORT MAP(
 Inst_Decoder2to4: Decoder2to4 PORT MAP(
 		s0 => countertodecMux(0),
 		s1 => countertodecMux(1),
-		dispsel =>  displaySelector
+		dispsel =>  displaySelector_c
 	);
 
 

@@ -1,21 +1,18 @@
-Release 14.2 - xst P.28xd (lin64)
+Release 14.2 - xst P.28xd (nt64)
 Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.11 secs
  
---> 
-Reading design: Chronometer.prj
+--> Reading design: Chronometer.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -45,7 +42,7 @@ Ignore Synthesis Constraint File   : NO
 ---- Target Parameters
 Output File Name                   : "Chronometer"
 Output Format                      : NGC
-Target Device                      : xc3s100e-5-cp132
+Target Device                      : xc3s500e-5-fg320
 
 ---- Source Options
 Top Module Name                    : Chronometer
@@ -107,21 +104,22 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/Div50Mto1.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/Div50Mto700.vhd" in Library work.
+Entity <div50mto700> compiled.
+Entity <div50mto700> (Architecture <arch>) compiled.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd" in Library work.
 Architecture arch of Entity div50mto1 is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/cont59x2.vhd" in Library work.
-Architecture contarch of Entity cont59x2 is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/mux4to1.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/cont.vhd" in Library work.
+Architecture contarch of Entity cont is up to date.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/mux4to1.vhd" in Library work.
 Architecture behavioral of Entity mux4to1 is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/bcd.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/bcd.vhd" in Library work.
 Architecture arch_bcd of Entity bcd is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/Div50Mto700.vhd" in Library work.
-Architecture arch of Entity div50mto700 is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/CyclicalCounter.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd" in Library work.
 Architecture behavioral of Entity cyclicalcounter is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/Decoder2to4.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd" in Library work.
 Architecture behavioral of Entity decoder2to4 is up to date.
-Compiling vhdl file "/home/pin3da/Repos/Chronometer/Chronometer.vhd" in Library work.
+Compiling vhdl file "F:/Documentos/Electronica/DigiClock/Chronometer.vhd" in Library work.
 Architecture arch_crh of Entity chronometer is up to date.
 
 =========================================================================
@@ -129,15 +127,15 @@ Architecture arch_crh of Entity chronometer is up to date.
 =========================================================================
 Analyzing hierarchy for entity <Chronometer> in library <work> (architecture <arch_crh>).
 
+Analyzing hierarchy for entity <Div50Mto700> in library <work> (architecture <arch>).
+
 Analyzing hierarchy for entity <Div50Mto1> in library <work> (architecture <arch>).
 
-Analyzing hierarchy for entity <cont59x2> in library <work> (architecture <contarch>).
+Analyzing hierarchy for entity <cont> in library <work> (architecture <contarch>).
 
 Analyzing hierarchy for entity <mux4to1> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <bcd> in library <work> (architecture <arch_bcd>).
-
-Analyzing hierarchy for entity <Div50Mto700> in library <work> (architecture <arch>).
 
 Analyzing hierarchy for entity <CyclicalCounter> in library <work> (architecture <behavioral>).
 
@@ -150,20 +148,20 @@ Analyzing hierarchy for entity <Decoder2to4> in library <work> (architecture <be
 Analyzing Entity <Chronometer> in library <work> (Architecture <arch_crh>).
 Entity <Chronometer> analyzed. Unit <Chronometer> generated.
 
+Analyzing Entity <Div50Mto700> in library <work> (Architecture <arch>).
+Entity <Div50Mto700> analyzed. Unit <Div50Mto700> generated.
+
 Analyzing Entity <Div50Mto1> in library <work> (Architecture <arch>).
 Entity <Div50Mto1> analyzed. Unit <Div50Mto1> generated.
 
-Analyzing Entity <cont59x2> in library <work> (Architecture <contarch>).
-Entity <cont59x2> analyzed. Unit <cont59x2> generated.
+Analyzing Entity <cont> in library <work> (Architecture <contarch>).
+Entity <cont> analyzed. Unit <cont> generated.
 
 Analyzing Entity <mux4to1> in library <work> (Architecture <behavioral>).
 Entity <mux4to1> analyzed. Unit <mux4to1> generated.
 
 Analyzing Entity <bcd> in library <work> (Architecture <arch_bcd>).
 Entity <bcd> analyzed. Unit <bcd> generated.
-
-Analyzing Entity <Div50Mto700> in library <work> (Architecture <arch>).
-Entity <Div50Mto700> analyzed. Unit <Div50Mto700> generated.
 
 Analyzing Entity <CyclicalCounter> in library <work> (Architecture <behavioral>).
 Entity <CyclicalCounter> analyzed. Unit <CyclicalCounter> generated.
@@ -178,8 +176,18 @@ Entity <Decoder2to4> analyzed. Unit <Decoder2to4> generated.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <Div50Mto700>.
+    Related source file is "F:/Documentos/Electronica/DigiClock/Div50Mto700.vhd".
+    Found 1-bit register for signal <clkout>.
+    Found 19-bit up counter for signal <counter>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Div50Mto700> synthesized.
+
+
 Synthesizing Unit <Div50Mto1>.
-    Related source file is "/home/pin3da/Repos/Chronometer/Div50Mto1.vhd".
+    Related source file is "F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd".
     Found 1-bit register for signal <clkout>.
     Found 25-bit up counter for signal <counter>.
     Summary:
@@ -188,38 +196,34 @@ Synthesizing Unit <Div50Mto1>.
 Unit <Div50Mto1> synthesized.
 
 
-Synthesizing Unit <cont59x2>.
-    Related source file is "/home/pin3da/Repos/Chronometer/cont59x2.vhd".
+Synthesizing Unit <cont>.
+    Related source file is "F:/Documentos/Electronica/DigiClock/cont.vhd".
     Found 4-bit register for signal <cont1>.
-    Found 4-bit adder for signal <cont1$addsub0000> created at line 50.
-    Found 4-bit comparator less for signal <cont1$cmp_lt0000> created at line 57.
+    Found 4-bit adder for signal <cont1$addsub0000> created at line 63.
+    Found 4-bit comparator less for signal <cont1$cmp_lt0000> created at line 60.
     Found 4-bit register for signal <cont2>.
-    Found 4-bit adder for signal <cont2$addsub0000> created at line 52.
-    Found 4-bit comparator greatequal for signal <cont2$cmp_ge0000> created at line 57.
-    Found 4-bit comparator greatequal for signal <cont2$cmp_ge0001> created at line 53.
-    Found 4-bit comparator greatequal for signal <cont2$cmp_ge0002> created at line 50.
-    Found 4-bit comparator less for signal <cont2$cmp_lt0000> created at line 49.
-    Found 4-bit comparator less for signal <cont2$cmp_lt0001> created at line 50.
-    Found 4-bit comparator less for signal <cont2$cmp_lt0002> created at line 53.
-    Found 4-bit register for signal <cont3>.
-    Found 4-bit adder for signal <cont3$addsub0000> created at line 57.
+    Found 4-bit adder for signal <cont2$addsub0000> created at line 59.
+    Found 4-bit comparator less for signal <cont2$cmp_lt0000> created at line 57.
+    Found 4-bit comparator less for signal <cont2$cmp_lt0001> created at line 53.
+    Found 4-bit comparator less for signal <cont2$cmp_lt0002> created at line 49.
+    Found 4-bit up counter for signal <cont3>.
     Found 4-bit up counter for signal <cont4>.
     Summary:
-	inferred   1 Counter(s).
-	inferred  12 D-type flip-flop(s).
-	inferred   3 Adder/Subtractor(s).
-	inferred   7 Comparator(s).
-Unit <cont59x2> synthesized.
+	inferred   2 Counter(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <cont> synthesized.
 
 
 Synthesizing Unit <mux4to1>.
-    Related source file is "/home/pin3da/Repos/Chronometer/mux4to1.vhd".
+    Related source file is "F:/Documentos/Electronica/DigiClock/mux4to1.vhd".
 WARNING:Xst:737 - Found 4-bit latch for signal <display>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <mux4to1> synthesized.
 
 
 Synthesizing Unit <bcd>.
-    Related source file is "/home/pin3da/Repos/Chronometer/bcd.vhd".
+    Related source file is "F:/Documentos/Electronica/DigiClock/bcd.vhd".
     Found 16x8-bit ROM for signal <dataout$mux0002> created at line 40.
     Found 8-bit register for signal <dataout>.
     Summary:
@@ -228,33 +232,23 @@ Synthesizing Unit <bcd>.
 Unit <bcd> synthesized.
 
 
-Synthesizing Unit <Div50Mto700>.
-    Related source file is "/home/pin3da/Repos/Chronometer/Div50Mto700.vhd".
-    Found 1-bit register for signal <clkout>.
-    Found 16-bit up counter for signal <counter>.
-    Summary:
-	inferred   1 Counter(s).
-	inferred   1 D-type flip-flop(s).
-Unit <Div50Mto700> synthesized.
-
-
 Synthesizing Unit <CyclicalCounter>.
-    Related source file is "/home/pin3da/Repos/Chronometer/CyclicalCounter.vhd".
-WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:1608 - Relative priorities of control signals on register <s1out> differ from those commonly found in the selected device family. This will result in additional logic around the register.
-WARNING:Xst:737 - Found 1-bit latch for signal <s1out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <s0out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Related source file is "F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd".
+    Found 1-bit register for signal <s0out>.
+    Found 1-bit register for signal <s1out>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
 Unit <CyclicalCounter> synthesized.
 
 
 Synthesizing Unit <Decoder2to4>.
-    Related source file is "/home/pin3da/Repos/Chronometer/Decoder2to4.vhd".
+    Related source file is "F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd".
 WARNING:Xst:737 - Found 4-bit latch for signal <dispsel>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 Unit <Decoder2to4> synthesized.
 
 
 Synthesizing Unit <Chronometer>.
-    Related source file is "/home/pin3da/Repos/Chronometer/Chronometer.vhd".
+    Related source file is "F:/Documentos/Electronica/DigiClock/Chronometer.vhd".
 Unit <Chronometer> synthesized.
 
 
@@ -264,21 +258,19 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x8-bit ROM                                          : 1
-# Adders/Subtractors                                   : 3
- 4-bit adder                                           : 3
-# Counters                                             : 3
- 16-bit up counter                                     : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 4
+ 19-bit up counter                                     : 1
  25-bit up counter                                     : 1
- 4-bit up counter                                      : 1
-# Registers                                            : 6
- 1-bit register                                        : 2
- 4-bit register                                        : 3
+ 4-bit up counter                                      : 2
+# Registers                                            : 7
+ 1-bit register                                        : 4
+ 4-bit register                                        : 2
  8-bit register                                        : 1
-# Latches                                              : 4
- 1-bit latch                                           : 2
+# Latches                                              : 2
  4-bit latch                                           : 2
-# Comparators                                          : 7
- 4-bit comparator greatequal                           : 3
+# Comparators                                          : 4
  4-bit comparator less                                 : 4
 
 =========================================================================
@@ -287,8 +279,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <Inst_Div50Mto700> is unconnected in block <Chronometer>.
-   It will be removed from the design.
 
 Synthesizing (advanced) Unit <bcd>.
 INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_dataout_mux0002> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
@@ -300,19 +290,17 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x8-bit ROM                                          : 1
-# Adders/Subtractors                                   : 3
- 4-bit adder                                           : 3
-# Counters                                             : 3
- 16-bit up counter                                     : 1
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 4
+ 19-bit up counter                                     : 1
  25-bit up counter                                     : 1
- 4-bit up counter                                      : 1
-# Registers                                            : 22
- Flip-Flops                                            : 22
-# Latches                                              : 4
- 1-bit latch                                           : 2
+ 4-bit up counter                                      : 2
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Latches                                              : 2
  4-bit latch                                           : 2
-# Comparators                                          : 7
- 4-bit comparator greatequal                           : 3
+# Comparators                                          : 4
  4-bit comparator less                                 : 4
 
 =========================================================================
@@ -320,41 +308,21 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1710 - FF/Latch <dataout_0> (without init value) has a constant value of 1 in block <bcd>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <Chronometer> ...
 
-Optimizing unit <cont59x2> ...
-WARNING:Xst:1293 - FF/Latch <cont2_3> has a constant value of 0 in block <cont59x2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <cont2_3> has a constant value of 0 in block <cont59x2>. This FF/Latch will be trimmed during the optimization process.
+Optimizing unit <cont> ...
 
 Optimizing unit <bcd> ...
-
-Optimizing unit <CyclicalCounter> ...
 
 Optimizing unit <mux4to1> ...
 
 Optimizing unit <Decoder2to4> ...
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/clkout> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_0> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_1> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_2> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_3> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_4> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_5> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_6> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_7> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_8> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_9> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_10> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_11> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_12> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_13> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_14> of sequential type is unconnected in block <Chronometer>.
-WARNING:Xst:2677 - Node <Inst_Div50Mto700/counter_15> of sequential type is unconnected in block <Chronometer>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Chronometer, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block Chronometer, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -362,8 +330,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 49
- Flip-Flops                                            : 49
+# Registers                                            : 71
+ Flip-Flops                                            : 71
 
 =========================================================================
 
@@ -392,26 +360,28 @@ Design Statistics
 # IOs                              : 14
 
 Cell Usage :
-# BELS                             : 188
+# BELS                             : 277
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 24
-#      LUT2                        : 35
-#      LUT3                        : 19
-#      LUT3_D                      : 1
+#      INV                         : 10
+#      LUT1                        : 42
+#      LUT2                        : 57
+#      LUT2_L                      : 1
+#      LUT3                        : 27
+#      LUT3_L                      : 1
 #      LUT4                        : 33
-#      LUT4_D                      : 6
+#      LUT4_D                      : 1
 #      LUT4_L                      : 1
-#      MUXCY                       : 31
+#      MUXCY                       : 54
 #      MUXF5                       : 4
 #      VCC                         : 1
-#      XORCY                       : 25
-# FlipFlops/Latches                : 59
-#      FDCE                        : 16
-#      FDE                         : 25
-#      FDS                         : 8
-#      LDC                         : 1
-#      LDCPE                       : 9
+#      XORCY                       : 44
+# FlipFlops/Latches                : 79
+#      FDCE                        : 18
+#      FDE                         : 44
+#      FDRE                        : 1
+#      FDS                         : 7
+#      FDSE                        : 1
+#      LDCPE                       : 8
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 13
@@ -422,14 +392,14 @@ Cell Usage :
 Device utilization summary:
 ---------------------------
 
-Selected Device : 3s100ecp132-5 
+Selected Device : 3s500efg320-5 
 
- Number of Slices:                       67  out of    960     6%  
- Number of Slice Flip Flops:             47  out of   1920     2%  
- Number of 4 input LUTs:                126  out of   1920     6%  
+ Number of Slices:                       91  out of   4656     1%  
+ Number of Slice Flip Flops:             68  out of   9312     0%  
+ Number of 4 input LUTs:                173  out of   9312     1%  
  Number of IOs:                          14
- Number of bonded IOBs:                  14  out of     83    16%  
-    IOB Flip Flops:                      12
+ Number of bonded IOBs:                  14  out of    232     6%  
+    IOB Flip Flops:                      11
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -450,18 +420,14 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------------+------------------------------------+-------+
-Clock Signal                                                             | Clock buffer(FF name)              | Load  |
--------------------------------------------------------------------------+------------------------------------+-------+
-clk                                                                      | BUFGP                              | 34    |
-Inst_Div50Mto1/clkout                                                    | NONE(Inst_cont59x2/cont4_3)        | 15    |
-Inst_CyclicalCounter/s1out                                               | NONE(Inst_CyclicalCounter/s1out)   | 1     |
-Inst_CyclicalCounter/s0out_not0001(Inst_CyclicalCounter/s0out_not00011:O)| NONE(*)(Inst_CyclicalCounter/s0out)| 1     |
-Inst_CyclicalCounter/s0out                                               | NONE(Inst_mux4to1/display_3)       | 8     |
--------------------------------------------------------------------------+------------------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+-----------------------------------+---------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)           | Load  |
+-----------------------------------+---------------------------------+-------+
+clk_c                              | BUFGP                           | 53    |
+Inst_Div50Mto700/clkout            | NONE(Inst_CyclicalCounter/s0out)| 2     |
+Inst_Div50Mto1/clkout              | NONE(Inst_cont/cont4_3)         | 16    |
+Inst_CyclicalCounter/s0out         | NONE(Inst_mux4to1/display_3)    | 8     |
+-----------------------------------+---------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -469,17 +435,14 @@ Asynchronous Control Signals Information:
 -------------------------------------------------------------------------------+---------------------------------+-------+
 Control Signal                                                                 | Buffer(FF name)                 | Load  |
 -------------------------------------------------------------------------------+---------------------------------+-------+
-reset                                                                          | IBUF                            | 17    |
-Inst_CyclicalCounter/s0out_mux0004(Inst_Decoder2to4/dispsel_or00001:O)         | NONE(Inst_Decoder2to4/dispsel_0)| 1     |
-Inst_CyclicalCounter/s1out_and0000(Inst_CyclicalCounter/s1out_and00001:O)      | NONE(Inst_CyclicalCounter/s1out)| 1     |
-Inst_CyclicalCounter/s1out_or0000(Inst_CyclicalCounter/s1out_or00001:O)        | NONE(Inst_CyclicalCounter/s1out)| 1     |
+reset_c                                                                        | IBUF                            | 18    |
+Inst_CyclicalCounter/s1out_and0003(Inst_CyclicalCounter/s1out_and00031:O)      | NONE(Inst_Decoder2to4/dispsel_1)| 1     |
+Inst_CyclicalCounter/s1out_mux0000(Inst_CyclicalCounter/s1out_mux00001:O)      | NONE(Inst_Decoder2to4/dispsel_2)| 1     |
+Inst_Decoder2to4/dispsel_0__and0000(Inst_Decoder2to4/dispsel_or00001:O)        | NONE(Inst_Decoder2to4/dispsel_0)| 1     |
 Inst_Decoder2to4/dispsel_0__or0000(Inst_Decoder2to4/dispsel_and00001:O)        | NONE(Inst_Decoder2to4/dispsel_0)| 1     |
-Inst_Decoder2to4/dispsel_1__and0000(Inst_Decoder2to4/dispsel_1__and00001:O)    | NONE(Inst_Decoder2to4/dispsel_1)| 1     |
 Inst_Decoder2to4/dispsel_1__or0000(Inst_Decoder2to4/dispsel_1__or00001_INV_0:O)| NONE(Inst_Decoder2to4/dispsel_1)| 1     |
-Inst_Decoder2to4/dispsel_2__and0000(Inst_Decoder2to4/dispsel_2__and00001:O)    | NONE(Inst_Decoder2to4/dispsel_2)| 1     |
 Inst_Decoder2to4/dispsel_2__or0000(Inst_Decoder2to4/dispsel_2__or00001_INV_0:O)| NONE(Inst_Decoder2to4/dispsel_2)| 1     |
 Inst_Decoder2to4/dispsel_3__or0000(Inst_Decoder2to4/dispsel_3__or00001:O)      | NONE(Inst_Decoder2to4/dispsel_3)| 1     |
-Inst_cont59x2/cont2_3(XST_GND:G)                                               | NONE(Inst_Decoder2to4/dispsel_3)| 1     |
 Inst_mux4to1/display_0__and0000(Inst_mux4to1/display_0__and00001:O)            | NONE(Inst_mux4to1/display_0)    | 1     |
 Inst_mux4to1/display_0__and0001(Inst_mux4to1/display_0__and00011:O)            | NONE(Inst_mux4to1/display_0)    | 1     |
 Inst_mux4to1/display_1__and0000(Inst_mux4to1/display_1__and00001:O)            | NONE(Inst_mux4to1/display_1)    | 1     |
@@ -488,14 +451,15 @@ Inst_mux4to1/display_2__and0000(Inst_mux4to1/display_2__and00001:O)            |
 Inst_mux4to1/display_2__and0001(Inst_mux4to1/display_2__and00011:O)            | NONE(Inst_mux4to1/display_2)    | 1     |
 Inst_mux4to1/display_3__and0000(Inst_mux4to1/display_3__and00001:O)            | NONE(Inst_mux4to1/display_3)    | 1     |
 Inst_mux4to1/display_3__and0001(Inst_mux4to1/display_3__and00011:O)            | NONE(Inst_mux4to1/display_3)    | 1     |
+N0(XST_GND:G)                                                                  | NONE(Inst_Decoder2to4/dispsel_3)| 1     |
 -------------------------------------------------------------------------------+---------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 5.200ns (Maximum Frequency: 192.309MHz)
-   Minimum input arrival time before clock: 4.344ns
+   Minimum period: 6.062ns (Maximum Frequency: 164.970MHz)
+   Minimum input arrival time before clock: 4.349ns
    Maximum output required time after clock: 4.114ns
    Maximum combinational path delay: No path found
 
@@ -504,15 +468,15 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'clk'
+Timing constraint: Default period analysis for Clock 'clk_c'
   Clock period: 5.200ns (frequency: 192.309MHz)
-  Total number of paths / destination ports: 976 / 27
+  Total number of paths / destination ports: 1547 / 48
 -------------------------------------------------------------------------
 Delay:               5.200ns (Levels of Logic = 26)
   Source:            Inst_Div50Mto1/counter_1 (FF)
   Destination:       Inst_Div50Mto1/counter_24 (FF)
-  Source Clock:      clk rising
-  Destination Clock: clk rising
+  Source Clock:      clk_c rising
+  Destination Clock: clk_c rising
 
   Data Path: Inst_Div50Mto1/counter_1 to Inst_Div50Mto1/counter_24
                                 Gate     Net
@@ -551,70 +515,91 @@ Delay:               5.200ns (Levels of Logic = 26)
                                        (81.6% logic, 18.4% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_Div50Mto1/clkout'
-  Clock period: 4.915ns (frequency: 203.477MHz)
-  Total number of paths / destination ports: 449 / 30
+Timing constraint: Default period analysis for Clock 'Inst_Div50Mto700/clkout'
+  Clock period: 3.503ns (frequency: 285.436MHz)
+  Total number of paths / destination ports: 9 / 5
 -------------------------------------------------------------------------
-Delay:               4.915ns (Levels of Logic = 3)
-  Source:            Inst_cont59x2/cont2_0 (FF)
-  Destination:       Inst_cont59x2/cont3_3 (FF)
+Delay:               3.503ns (Levels of Logic = 1)
+  Source:            Inst_CyclicalCounter/s0out (FF)
+  Destination:       Inst_CyclicalCounter/s1out (FF)
+  Source Clock:      Inst_Div50Mto700/clkout rising
+  Destination Clock: Inst_Div50Mto700/clkout rising
+
+  Data Path: Inst_CyclicalCounter/s0out to Inst_CyclicalCounter/s1out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            34   0.514   1.225  Inst_CyclicalCounter/s0out (Inst_CyclicalCounter/s0out)
+     LUT3:I0->O            1   0.612   0.357  Inst_CyclicalCounter/s1out_or00001 (Inst_CyclicalCounter/s1out_or0000)
+     FDSE:S                    0.795          Inst_CyclicalCounter/s1out
+    ----------------------------------------
+    Total                      3.503ns (1.921ns logic, 1.582ns route)
+                                       (54.8% logic, 45.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Inst_Div50Mto1/clkout'
+  Clock period: 6.062ns (frequency: 164.970MHz)
+  Total number of paths / destination ports: 824 / 32
+-------------------------------------------------------------------------
+Delay:               6.062ns (Levels of Logic = 4)
+  Source:            Inst_cont/cont2_3 (FF)
+  Destination:       Inst_cont/cont3_3 (FF)
   Source Clock:      Inst_Div50Mto1/clkout rising
   Destination Clock: Inst_Div50Mto1/clkout rising
 
-  Data Path: Inst_cont59x2/cont2_0 to Inst_cont59x2/cont3_3
+  Data Path: Inst_cont/cont2_3 to Inst_cont/cont3_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             6   0.514   0.572  Inst_cont59x2/cont2_0 (Inst_cont59x2/cont2_0)
-     LUT4_D:I3->O          4   0.612   0.651  Inst_cont59x2/cont2_cmp_ge00021 (Inst_cont59x2/cont2_cmp_ge0002)
-     LUT4:I0->O            1   0.612   0.360  Inst_cont59x2/cont3_not0002_SW0 (N18)
-     LUT4:I3->O            4   0.612   0.499  Inst_cont59x2/cont3_not0002 (Inst_cont59x2/cont3_not0002)
-     FDCE:CE                   0.483          Inst_cont59x2/cont3_0
+     FDCE:C->Q             4   0.514   0.651  Inst_cont/cont2_3 (Inst_cont/cont2_3)
+     LUT4_D:I0->LO         1   0.612   0.130  Inst_cont/cont2_cmp_eq00011 (N42)
+     LUT3:I2->O            1   0.612   0.360  Inst_cont/cont3_and000019 (Inst_cont/cont3_and000019)
+     LUT4:I3->O           18   0.612   0.977  Inst_cont/cont3_and000038 (Inst_cont/cont3_and0000)
+     LUT2:I1->O            4   0.612   0.499  Inst_cont/cont3_not00011 (Inst_cont/cont3_not0001)
+     FDCE:CE                   0.483          Inst_cont/cont3_0
     ----------------------------------------
-    Total                      4.915ns (2.833ns logic, 2.082ns route)
-                                       (57.6% logic, 42.4% route)
+    Total                      6.062ns (3.445ns logic, 2.617ns route)
+                                       (56.8% logic, 43.2% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'Inst_CyclicalCounter/s0out_not0001'
-  Clock period: 2.693ns (frequency: 371.387MHz)
-  Total number of paths / destination ports: 1 / 1
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_c'
+  Total number of paths / destination ports: 51 / 51
 -------------------------------------------------------------------------
-Delay:               2.693ns (Levels of Logic = 1)
-  Source:            Inst_CyclicalCounter/s0out (LATCH)
-  Destination:       Inst_CyclicalCounter/s0out (LATCH)
-  Source Clock:      Inst_CyclicalCounter/s0out_not0001 falling
-  Destination Clock: Inst_CyclicalCounter/s0out_not0001 falling
-
-  Data Path: Inst_CyclicalCounter/s0out to Inst_CyclicalCounter/s0out
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q             31   0.588   1.225  Inst_CyclicalCounter/s0out (Inst_CyclicalCounter/s0out)
-     LUT2:I0->O            3   0.612   0.000  Inst_Decoder2to4/dispsel_or00001 (Inst_CyclicalCounter/s0out_mux0004)
-     LDC:D                     0.268          Inst_CyclicalCounter/s0out
-    ----------------------------------------
-    Total                      2.693ns (1.468ns logic, 1.225ns route)
-                                       (54.5% logic, 45.5% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 33 / 33
--------------------------------------------------------------------------
-Offset:              4.344ns (Levels of Logic = 2)
-  Source:            reset (PAD)
+Offset:              4.349ns (Levels of Logic = 2)
+  Source:            reset_c (PAD)
   Destination:       Inst_Div50Mto1/counter_0 (FF)
-  Destination Clock: clk rising
+  Destination Clock: clk_c rising
 
-  Data Path: reset to Inst_Div50Mto1/counter_0
+  Data Path: reset_c to Inst_Div50Mto1/counter_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            28   1.106   1.072  reset_IBUF (reset_IBUF)
-     INV:I->O             25   0.612   1.071  reset_inv1_INV_0 (reset_inv)
+     IBUF:I->O            28   1.106   1.072  reset_c_IBUF (reset_c_IBUF)
+     INV:I->O             44   0.612   1.076  reset_c_inv1_INV_0 (reset_c_inv)
      FDE:CE                    0.483          Inst_Div50Mto1/counter_0
     ----------------------------------------
-    Total                      4.344ns (2.201ns logic, 2.143ns route)
-                                       (50.7% logic, 49.3% route)
+    Total                      4.349ns (2.201ns logic, 2.148ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Inst_Div50Mto700/clkout'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.972ns (Levels of Logic = 2)
+  Source:            reset_c (PAD)
+  Destination:       Inst_CyclicalCounter/s1out (FF)
+  Destination Clock: Inst_Div50Mto700/clkout rising
+
+  Data Path: reset_c to Inst_CyclicalCounter/s1out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.106   1.102  reset_c_IBUF (reset_c_IBUF)
+     LUT3:I2->O            1   0.612   0.357  Inst_CyclicalCounter/s1out_or00001 (Inst_CyclicalCounter/s1out_or0000)
+     FDSE:S                    0.795          Inst_CyclicalCounter/s1out
+    ----------------------------------------
+    Total                      3.972ns (2.513ns logic, 1.459ns route)
+                                       (63.3% logic, 36.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CyclicalCounter/s0out'
@@ -622,34 +607,34 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'Inst_CyclicalCounter/s0ou
 -------------------------------------------------------------------------
 Offset:              4.114ns (Levels of Logic = 1)
   Source:            Inst_Decoder2to4/dispsel_3 (LATCH)
-  Destination:       displaySelector<3> (PAD)
+  Destination:       displaySelector_c<3> (PAD)
   Source Clock:      Inst_CyclicalCounter/s0out falling
 
-  Data Path: Inst_Decoder2to4/dispsel_3 to displaySelector<3>
+  Data Path: Inst_Decoder2to4/dispsel_3 to displaySelector_c<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LDCPE:G->Q            1   0.588   0.357  Inst_Decoder2to4/dispsel_3 (Inst_Decoder2to4/dispsel_3)
-     OBUF:I->O                 3.169          displaySelector_3_OBUF (displaySelector<3>)
+     OBUF:I->O                 3.169          displaySelector_c_3_OBUF (displaySelector_c<3>)
     ----------------------------------------
     Total                      4.114ns (3.757ns logic, 0.357ns route)
                                        (91.3% logic, 8.7% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 8 / 8
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_c'
+  Total number of paths / destination ports: 7 / 7
 -------------------------------------------------------------------------
 Offset:              4.040ns (Levels of Logic = 1)
   Source:            Inst_bcd/dataout_7 (FF)
-  Destination:       dataout<7> (PAD)
-  Source Clock:      clk rising
+  Destination:       dataout_c<7> (PAD)
+  Source Clock:      clk_c rising
 
-  Data Path: Inst_bcd/dataout_7 to dataout<7>
+  Data Path: Inst_bcd/dataout_7 to dataout_c<7>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDS:C->Q              1   0.514   0.357  Inst_bcd/dataout_7 (Inst_bcd/dataout_7)
-     OBUF:I->O                 3.169          dataout_7_OBUF (dataout<7>)
+     OBUF:I->O                 3.169          dataout_c_7_OBUF (dataout_c<7>)
     ----------------------------------------
     Total                      4.040ns (3.683ns logic, 0.357ns route)
                                        (91.2% logic, 8.8% route)
@@ -657,15 +642,14 @@ Offset:              4.040ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 30.07 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.50 secs
  
 --> 
 
-
-Total memory usage is 515748 kilobytes
+Total memory usage is 256148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   25 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

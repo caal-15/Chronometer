@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x54af6ca1 */
+/* This file is designed for use with ISim build 0xa0883be4 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,11 +21,11 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/pin3da/Repos/Chronometer/Div50Mto1.vhd";
+static const char *ng0 = "F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd";
 extern char *IEEE_P_2592010699;
 
-unsigned char ieee_p_2592010699_sub_2763492388968962707_503743352(char *, char *, unsigned int , unsigned int );
-unsigned char ieee_p_2592010699_sub_374109322130769762_503743352(char *, unsigned char );
+unsigned char ieee_p_2592010699_sub_1690584930_503743352(char *, unsigned char );
+unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
 
 
 static void work_a_1797165374_1446275585_p_0(char *t0)
@@ -54,17 +54,17 @@ LAB0:    xsi_set_current_line(43, ng0);
         goto LAB2;
 
 LAB4:    t1 = (t0 + 992U);
-    t3 = ieee_p_2592010699_sub_2763492388968962707_503743352(IEEE_P_2592010699, t1, 0U, 0U);
+    t3 = ieee_p_2592010699_sub_1744673427_503743352(IEEE_P_2592010699, t1, 0U, 0U);
     if (t3 != 0)
         goto LAB5;
 
 LAB6:
-LAB3:    t1 = (t0 + 3392);
+LAB3:    t1 = (t0 + 3400);
     *((int *)t1) = 1;
 
 LAB1:    return;
 LAB2:    xsi_set_current_line(44, ng0);
-    t1 = (t0 + 3488);
+    t1 = (t0 + 3496);
     t5 = (t1 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
@@ -86,7 +86,7 @@ LAB9:    xsi_set_current_line(50, ng0);
     t2 = *((char **)t1);
     t9 = *((int *)t2);
     t14 = (t9 + 1);
-    t1 = (t0 + 3552);
+    t1 = (t0 + 3560);
     t5 = (t1 + 56U);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
@@ -100,8 +100,8 @@ LAB7:    xsi_set_current_line(47, ng0);
     t2 = (t0 + 1512U);
     t6 = *((char **)t2);
     t10 = *((unsigned char *)t6);
-    t11 = ieee_p_2592010699_sub_374109322130769762_503743352(IEEE_P_2592010699, t10);
-    t2 = (t0 + 3488);
+    t11 = ieee_p_2592010699_sub_1690584930_503743352(IEEE_P_2592010699, t10);
+    t2 = (t0 + 3496);
     t7 = (t2 + 56U);
     t8 = *((char **)t7);
     t12 = (t8 + 56U);
@@ -109,7 +109,7 @@ LAB7:    xsi_set_current_line(47, ng0);
     *((unsigned char *)t13) = t11;
     xsi_driver_first_trans_fast(t2);
     xsi_set_current_line(48, ng0);
-    t1 = (t0 + 3552);
+    t1 = (t0 + 3560);
     t2 = (t1 + 56U);
     t5 = *((char **)t2);
     t6 = (t5 + 56U);
@@ -136,7 +136,7 @@ LAB0:    xsi_set_current_line(55, ng0);
 LAB3:    t1 = (t0 + 1512U);
     t2 = *((char **)t1);
     t3 = *((unsigned char *)t2);
-    t1 = (t0 + 3616);
+    t1 = (t0 + 3624);
     t4 = (t1 + 56U);
     t5 = *((char **)t4);
     t6 = (t5 + 56U);
@@ -144,7 +144,7 @@ LAB3:    t1 = (t0 + 1512U);
     *((unsigned char *)t7) = t3;
     xsi_driver_first_trans_fast_port(t1);
 
-LAB2:    t8 = (t0 + 3408);
+LAB2:    t8 = (t0 + 3416);
     *((int *)t8) = 1;
 
 LAB1:    return;
@@ -156,6 +156,6 @@ LAB4:    goto LAB2;
 extern void work_a_1797165374_1446275585_init()
 {
 	static char *pe[] = {(void *)work_a_1797165374_1446275585_p_0,(void *)work_a_1797165374_1446275585_p_1};
-	xsi_register_didat("work_a_1797165374_1446275585", "isim/tb_chronometer_isim_beh.exe.sim/work/a_1797165374_1446275585.didat");
+	xsi_register_didat("work_a_1797165374_1446275585", "isim/tb_Chronometer_isim_beh.exe.sim/work/a_1797165374_1446275585.didat");
 	xsi_register_executes(pe);
 }

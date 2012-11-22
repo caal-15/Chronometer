@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x54af6ca1 */
+/* This file is designed for use with ISim build 0xa0883be4 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -27,5 +27,5 @@
 
 extern void work_a_1443467215_0351183737_init()
 {
-	xsi_register_didat("work_a_1443467215_0351183737", "isim/tb_chronometer_isim_beh.exe.sim/work/a_1443467215_0351183737.didat");
+	xsi_register_didat("work_a_1443467215_0351183737", "isim/tb_Chronometer_isim_beh.exe.sim/work/a_1443467215_0351183737.didat");
 }

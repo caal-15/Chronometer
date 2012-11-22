@@ -44,20 +44,22 @@ signal s1out : std_logic := '0';
 
 begin
 process(clk, reset,s0out,s1out) begin
-	if(reset='1') then
-		s0out<='0';
-		s1out<='1';
-	elsif(s0out='0' and s1out='0') then
-		s1out<='1';
-	elsif(s0out='0' and s1out='1') then
-		s0out<='1';
-		s1out<='0';	
-	elsif(s0out='1' and s1out='0') then
-		s1out<='1';	
-	elsif(s0out='1' and s1out='1') then
-		s0out<='0';
-		s1out<='0';	
-	end if;
+	if(rising_edge(clk)) then
+		if(reset='1') then
+			s0out<='0';
+			s1out<='1';
+		elsif(s0out='0' and s1out='0') then
+			s1out<='1';
+		elsif(s0out='0' and s1out='1') then
+			s0out<='1';
+			s1out<='0';	
+		elsif(s0out='1' and s1out='0') then
+			s1out<='1';	
+		elsif(s0out='1' and s1out='1') then
+			s0out<='0';
+			s1out<='0';	
+		end if;
+	end if;	
 end process;	
 s0<=s0out;
 s1<=s1out;

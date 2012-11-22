@@ -1,10 +1,29 @@
 Command line:
-   tb_chronometer_isim_beh.exe
+   tb_Chronometer_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54006
+     -socket  49178
 
-Fri Nov 16 08:36:17 2012
+Tue Nov 20 16:46:53 2012
 
 
- Elaboration Time: 0.03 sec
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 501.985 Meg
+
+ Total Signals          : 56
+ Total Nets             : 60
+ Total Signal Drivers   : 23
+ Total Blocks           : 13
+ Total Primitive Blocks : 11
+ Total Processes        : 17
+ Total Traceable Variables  : 16
+ Total Scalar Nets and Variables : 562
+Total Line Count : 77
+
+ Total Simulation Time: 75.6917 sec
+
+ Current Memory Usage: 501.985 Meg
+
+Tue Nov 20 17:02:53 2012
+

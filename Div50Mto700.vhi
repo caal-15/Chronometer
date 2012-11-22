@@ -1,5 +1,5 @@
 
--- VHDL Instantiation Created from source file Div50Mto700.vhd -- 08:21:42 11/16/2012
+-- VHDL Instantiation Created from source file Div50Mto700.vhd -- 08:54:39 11/16/2012
 --
 -- Notes: 
 -- 1) This instantiation template has been automatically generated using types

@@ -1,0 +1,3 @@
+vhdl work "Div50Mto700.vhd"
+vhdl work "cont.vhd"
+vhdl work "test1.vhd"

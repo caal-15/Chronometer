@@ -1,39 +1,36 @@
-Running: /home/pin3da/mybin/14.2/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/pin3da/Repos/Chronometer/tb_chronometer_isim_beh.exe -prj /home/pin3da/Repos/Chronometer/tb_chronometer_beh.prj work.tb_chronometer 
-ISim P.28xd (signature 0x54af6ca1)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Running: F:\Windows\ISE\14.2\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o F:/Documentos/Electronica/DigiClock/tb_Chronometer1_isim_beh.exe -prj F:/Documentos/Electronica/DigiClock/tb_Chronometer1_beh.prj work.tb_Chronometer1 
+ISim P.28xd (signature 0xa0883be4)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/mux4to1.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/Div50Mto700.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/Div50Mto1.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/Decoder2to4.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/CyclicalCounter.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/cont59x2.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/bcd.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/Chronometer.vhd" into library work
-Parsing VHDL file "/home/pin3da/Repos/Chronometer/tb_chronometer.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/mux4to1.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/Div50Mto700.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/Div50Mto1.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/Decoder2to4.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/CyclicalCounter.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/cont.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/bcd.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/Chronometer.vhd" into library work
+Parsing VHDL file "F:/Documentos/Electronica/DigiClock/tb_Chronometer1.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 97176 KB
-Fuse CPU Usage: 2860 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling architecture arch of entity Div50Mto700 [div50mto700_default]
 Compiling architecture arch of entity Div50Mto1 [div50mto1_default]
-Compiling architecture contarch of entity cont59x2 [cont59x2_default]
+Compiling architecture contarch of entity cont [cont_default]
 Compiling architecture behavioral of entity mux4to1 [mux4to1_default]
 Compiling architecture arch_bcd of entity bcd [bcd_default]
-Compiling architecture arch of entity Div50Mto700 [div50mto700_default]
 Compiling architecture behavioral of entity CyclicalCounter [cyclicalcounter_default]
 Compiling architecture behavioral of entity Decoder2to4 [decoder2to4_default]
 Compiling architecture arch_crh of entity Chronometer [chronometer_default]
-Compiling architecture behavior of entity tb_chronometer
+Compiling architecture behavior of entity tb_chronometer1
 Time Resolution for simulation is 1ps.
-Waiting for 10 sub-compilation(s) to finish...
+Waiting for 6 sub-compilation(s) to finish...
 Compiled 22 VHDL Units
-Built simulation executable /home/pin3da/Repos/Chronometer/tb_chronometer_isim_beh.exe
-Fuse Memory Usage: 212828 KB
-Fuse CPU Usage: 3160 ms
-GCC CPU Usage: 8170 ms
+Built simulation executable F:/Documentos/Electronica/DigiClock/tb_Chronometer1_isim_beh.exe
+Fuse Memory Usage: 35924 KB
+Fuse CPU Usage: 889 ms
